@@ -1,1 +1,20 @@
-<h1>This is a secret<h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple API</title>
+</head>
+<body>
+    <h1>API Server</h1>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const fingerprint = urlParams.get('fingerprint');
+        if (fingerprint) {
+            const key = btoa(fingerprint); // 简单编码
+            document.body.innerHTML += `<p>Generated Key: ${key}</p>`;
+        }
+    </script>
+</body>
+</html>
+
