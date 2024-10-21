@@ -10,11 +10,16 @@
     <script>
         const urlParams = new URLSearchParams(window.location.search);
         const fingerprint = urlParams.get('fingerprint');
+
         if (fingerprint) {
-            const key = btoa(fingerprint); // 简单编码
-            document.body.innerHTML += `<p>Generated Key: ${key}</p>`;
+            const key = btoa(fingerprint); // 将指纹编码为Base64
+            // 将结果以 JSON 格式返回
+            document.body.innerHTML = JSON.stringify({ key: key });
+        } else {
+            document.body.innerHTML = JSON.stringify({ error: "Fingerprint not provided" });
         }
     </script>
 </body>
 </html>
+
 
