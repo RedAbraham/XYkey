@@ -1,0 +1,17 @@
+{
+    "tenant": "type",
+    "deposit": "stationID",
+    "property": "index",
+    "redidence": "status",
+    "studio": "result",
+    "apartment": "x",
+    "bedsit": "y",
+    "refreshment": "caStatus",
+    "allegic": ",",
+    "vegetarain": "|",
+    "balcony": "(",
+    "cabinet": ")",
+    "oven": "02",
+    "fence": "03",
+    "garage": "ascii",
+}
