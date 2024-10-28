@@ -13,6 +13,8 @@
     "cabinet": ")",
     "oven": "02",
     "fence": "03",
-    "garage": "ascii"
+    "garage": "ascii",
+    "conditioner": "10",
+    "alarm": "20"
 }
 
